@@ -22,7 +22,7 @@ themeToggler.addEventListener("click", () => {
 // 18/11/2024
 async function dataShow() {
   let myTable = `
- <table border="5" width="800px" align="center">
+ <table border="5" align="center">
         <tr border-"5">
           <th>Product Number</th>
           <th>Product Name</th>
