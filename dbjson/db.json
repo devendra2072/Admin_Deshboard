@@ -1,24 +1,10 @@
 {
   "employees": [
     {
-      "prdtnum": "12",
-      "name": "jujkk",
-      "pricee": "1234",
-      "quantitty": "253",
-      "id": "d717"
-    },
-    {
-      "prdtnum": "12",
+      "id": "7976",
+      "prdtnum": "123",
       "name": "mob",
-      "pricee": "6700",
-      "quantitty": "78",
-      "id": "c3d8"
-    },
-    {
-      "id": "e7fe",
-      "prdtnum": "12",
-      "name": "jvjjvjv",
-      "pricee": "123",
+      "pricee": "451435",
       "quantitty": "12"
     }
   ]

@@ -62,10 +62,6 @@ body {
   margin: 0 auto;
 }
 
-/* a{
-    color: var(--clr-dark);
-} */
-
 h1 {
   font-weight: 600;
   font-size: 0.8rem;
@@ -86,8 +82,6 @@ aside {
 }
 
 aside .top {
-  /* background-color: var(--clr-white); */
-  /* background: linear-gradient(-30deg, #33ccff, #81d5ff, #ffccff, #81d5ff); */
   display: flex;
   background: linear-gradient(
     to top right,
@@ -109,7 +103,6 @@ aside .top div.close i {
 /* -------------------------sidebar section----------------------------------------------- */
 
 aside .sidebar {
-  /* background-color: var(--clr-white); */
   background: linear-gradient(
     to top right,
     rgba(255, 255, 255, 0.5),
@@ -122,9 +115,6 @@ aside .sidebar {
   position: relative;
   top: 1rem;
 }
-/* aside .sidebar a h1{
-    font-weight: 800;
-} */
 
 aside .sidebar a {
   display: flex;
@@ -146,21 +136,16 @@ aside .sidebar a:last-child {
 }
 
 aside .sidebar a.active {
-  /* background: var(--clr-light); */
-  /* color: var(--clr-primary); */
   margin-left: 0;
-  /* border-left: 5px solid var(--clr-primary); */
 }
 aside .sidebar a.active::before {
   content: "";
   width: 6px;
   height: 100%;
-  /* background: var(--clr-primary); */
 }
 aside .sidebar a:hover {
   content: "";
-  /* width: 206px; */
-  /* color: var(--clr-primary); */
+
   border-left: 5px solid var(--clr-primary);
   background: linear-gradient(-30deg, #33ccff, #81d5ff, #ffccff, #81d5ff);
 }
@@ -217,7 +202,6 @@ main .insights > div {
 
 main .insights > div:hover {
   transform: scale(1.02);
-  /* box-shadow: none; */
 }
 main .insights > div i {
   background-color: coral;
@@ -227,7 +211,6 @@ main .insights > div i {
   font-size: 2rem;
 }
 main .insights > div.expensis i {
-  /* background: var(--clr-danger); */
   background-color: darkred;
 }
 main .insights > div.income i {
@@ -298,49 +281,11 @@ main .recent-order h2 {
   font-size: 35px;
   font-weight: bold;
 }
-/* main .recent-order table {
-  background: linear-gradient(
-    to top right,
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.3)
-  );
-  backdrop-filter: blur(5px);
-  width: 100%;
-  border-radius: var(--card-border-radius);
-  padding: var(--card-padding);
-  text-align: center;
-  box-shadow: var(--box-shadow);
-  transition: all.3s ease;
-  color: var(--clr-dark);
-}
-main .recent-order table:hover {
-  box-shadow: 1px solid var(--clr-warnig);
-}
-main table thead tr {
-  font-size: 21px;
-  color: black;
-}
-main table tbody tr {
-  height: 3.8rem;
-  border-bottom: 3px solid black;
-  color: black;
-  font-size: 17px;
-}
-main table tbody td {
-  height: 3.8rem;
-  border-bottom: 3px solid var(--clr-dark);
-}
-main table tbody tr:last-child td {
-  border: none;
-} */
 
 /* ------------------------------ start right section---------------- */
 .right {
   margin-top: 1.4rem;
 }
-/* .right h2{
-    color: var(--clr-dark);
-} */
 
 .right .top {
   display: flex;
@@ -351,7 +296,6 @@ main table tbody tr:last-child td {
   display: none;
 }
 .right .theme_toggler {
-  /* background-color: var(--clr-white); */
   background: linear-gradient(
     to top right,
     rgba(255, 255, 255, 0.5),
@@ -397,26 +341,16 @@ main table tbody tr:last-child td {
   justify-content: center;
 }
 .right .theme_toggler .active {
-  /* background: linear-gradient(
-    to top right,
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.3)
-  );
-  backdrop-filter: blur(5px); */
   color: white;
   background: var(--clr-primary);
-  /* font-size: 1.2rem;
-  width: 500%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 
 .right .top .proffile {
   display: flex;
   text-align: center;
-  /* gap: 2rem; */
+}
+.demo11 table tbody{
+    margin-left: 300px;
 }
 
 /* ---------------------------------responsive tablat view--------------------- */
@@ -441,15 +375,15 @@ main table tbody tr:last-child td {
     width: 100%;
     margin-top: 40px;
   }
-  .demo11 table{
+  .demo11 table {
     width: auto;
-    margin-left: 30px;
   }
   .demo11 table tbody {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     align-items: center;
+    margin-left: 200px;
   }
   .demo11 table tbody tr {
     padding-left: 30px;
@@ -457,7 +391,6 @@ main table tbody tr:last-child td {
     align-items: center;
   }
   .demo11 table tbody tr td {
-    /* width: 0%; */
     align-items: center;
   }
 }
@@ -558,21 +491,18 @@ main table tbody tr:last-child td {
     width: 100%;
     margin-top: 40px;
   }
-  .demo11 table{
+  .demo11 table {
     width: auto;
     margin-left: 30px;
     padding-left: 10px;
     padding-right: 10px;
   }
   .demo11 table tr {
-    /* width: 100%; */
-    /* margin-left: 20px; */
     padding-left: 30px;
     padding-right: 30px;
     align-items: center;
   }
   .demo11 table tr td {
-    /* width: 0%; */
     text-align: center;
   }
 }
@@ -671,13 +601,13 @@ main table tbody tr:last-child td {
     width: 100%;
     margin-top: 40px;
   }
-  .demo11 table tr {
+  .demo11 table tbody tr {
     width: 80%;
     margin-left: 5px;
     gap: 10px;
     align-items: center;
   }
-  .demo11 table tr td {
+  .demo11 table tbody tr td {
     width: 0%;
     align-items: center;
   }
@@ -687,7 +617,6 @@ main table tbody tr:last-child td {
 
 .container main .demo11 {
   margin-top: 80px;
-  /* width: 100%; */
 }
 
 .container main .demo11 table {
@@ -695,12 +624,10 @@ main table tbody tr:last-child td {
 }
 .container main .demo11 table tr {
   border: 2px solid darkslategray;
-  /* display: flex; */
-  /* justify-content: space-around;  */
+
   gap: 12px;
   font-size: 20px;
-  /* padding-left: 10px; */
-  /* padding-right: 20px; */
+
   background: linear-gradient(
     to top right,
     rgba(255, 255, 255, 0.5),
@@ -709,20 +636,12 @@ main table tbody tr:last-child td {
   backdrop-filter: blur(5px);
 }
 .container main .demo11 table tr th {
-  /* border: 2px solid black; */
-  /* display: flex; */
-  /* justify-content: space-around; */
   color: var(--clr-dark);
   align-items: center;
 }
 .container main .demo11 table tr td {
-  /* border: 2px solid black; */
-  /* display: flex;
-    justify-content: space-around; */
   color: var(--clr-dark);
   align-items: center;
   margin-left: 70px;
   height: 30px;
 }
-/* @media screen and (max-width: 700px) {
-} */

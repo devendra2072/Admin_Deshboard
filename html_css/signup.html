@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jewellry deshboard</title>
+    <title>jewellry dashboard</title>
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
       integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/html_css/sign.css">
   </head>
   <body>
     <div class="container">
@@ -16,7 +16,7 @@
       <aside>
         <div class="top">
           <div class="logo">
-            <h2>c<span class="danger">jewellry</span></h2>
+            <h2>@<span class="danger">Jewellery</span></h2>
           </div>
           <div class="close" id="close_btnn">
             <i class="fa-solid fa-xmark"></i>
@@ -27,7 +27,7 @@
         <div class="sidebar">
           <a href="/index.html" class="active">
             <i class="fa-brands fa-dashcube"></i>
-            <h1>Deshboard</h1>
+            <h1>Dashboard</h1>
           </a>
 
           <a href="/html_css/insert.html" class="active">
@@ -82,44 +82,115 @@
 
       <!------------------------------- main section start ----------------------------------->
       <main>
-        <h1 style="font-size: 30px;">Deshboard</h1>
-          <!-- -------------------start recent order--------------------- -->
-        </main>
-        <!----------------------------------- maim section end --------------------------------->
+        <h1 style="font-size: 30px;">Dashboard</h1>
 
-        <!--------------------------------- right section start --------------------------------->
-        <div class="right">
-          <!-- -------------------start top--------------  -->
-          <div class="top">
-
-            <button id="menu_bar">
-              <i class="fa-solid fa-bars"></i>
-            </button>
-
-            <div class="theme_toggler">
-              <i class="fa-regular fa-sun active" id="d"></i>
-              <i class="fa-solid fa-circle-half-stroke" id="d"></i>
-            </div>
-            <div class="proffile">
-              <div class="info">
-                <p><b>Abhishek Kurwe</b></p>
-                <p>Admin</p>
-                <small class="text-muted"></small>
+        <div class="holder">
+          <div class="box">
+            <form autocomplete="off">
+              <h2>Sign up</h2>
+              <div class="inputBox">
+                <input type="text" required="required" id="name" >
+                <span>Name</span>
+                <i></i>
               </div>
-              <div class="profile-photo">
-                <img src="/imgj/dg.jpg" alt="img" height="50px" width="60px">
+              <div class="inputBox">
+                <input type="@email" required="required" id="email">
+                <span>Email Id</span>
+                <i></i>
               </div>
-              <div>
+              <div class="inputBox">
+                <input type="password" required="required" id="password">
+                <span>Password</span>
+                <i></i>
+              </div>
+              <div class="inputBox">
+                <input type="cnfpassword" required="required" id="cnfpassword">
+                <span>Confirm Password</span>
+                <i></i>
+              </div>
+              <div class="links">
+                <a href="#"></a>
+                <a href="#" style="text-decoration: underline;">Allready Have Your Account?</a>
                 
               </div>
-            </div>
-
+              <input type="submit" value="signup" id="signup" >
+            </form>
           </div>
-          <!-- -------------------end |top--------------? -->
         </div>
-        <!---------------------------------- right section end ------------------------------------>
-      </div>
+        <!-- -------------------start recent order--------------------- -->
+      </main>
+      <!----------------------------------- maim section end --------------------------------->
 
-      <script src="/js_files/deshboard.js"></script>
-    </body>
-  </html>
+      <!--------------------------------- right section start --------------------------------->
+      <div class="right">
+        <!-- -------------------start top--------------  -->
+        <div class="top">
+
+          <button id="menu_bar">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div class="theme_toggler">
+            <i class="fa-regular fa-sun active" id="d"></i>
+            <i class="fa-solid fa-circle-half-stroke" id="d"></i>
+          </div>
+          <div class="proffile">
+            <div class="info">
+              <p><b>Abhishek Kurwe</b></p>
+              <p>Admin</p>
+              <small class="text-muted"></small>
+            </div>
+            <div class="profile-photo">
+              <img src="/imgj/dg.jpg" alt="img" height="50px" width="60px">
+            </div>
+            <div>
+
+            </div>
+          </div>
+
+        </div>
+        <!-- -------------------end |top--------------? -->
+      </div>
+      <!---------------------------------- right section end ------------------------------------>
+    </div>
+
+    <script src="/js_files/deshboard.js"></script>
+    <script>
+      document.getElementById("signup").addEventListener("click",add);
+
+function add(e) {
+    e.preventDefault();  // prevent default behaviour of form submit
+
+    let username = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+    let cnfpsw = document.getElementById("cnfpassword").value;
+
+    if(username == "" || email == "" || password == "" || cnfpsw == "") {
+        alert("All fields are required!");
+        return;
+    }
+    if(password != cnfpsw) {
+        alert("Passwords do not match!");
+        return;
+    }
+    // Store data in local storage
+    localStorage.setItem("name", username);
+    localStorage.setItem("email", email);
+    localStorage.setItem("password", password);
+    localStorage.setItem("cnfpassword", cnfpsw);
+
+
+    // redirect to login page 
+
+    window.location.href = "login.html";
+    // 
+    alert("registration successful");
+
+
+}
+
+    </script>
+
+  </body>
+</html>
