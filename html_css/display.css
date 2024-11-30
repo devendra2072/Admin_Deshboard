@@ -619,9 +619,7 @@ main .recent-order h2 {
   margin-top: 80px;
 }
 
-.container main .demo11 table {
-  display: flex;
-}
+
 .container main .demo11 table tr {
   border: 2px solid darkslategray;
 
