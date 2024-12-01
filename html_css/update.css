@@ -609,6 +609,7 @@ table tr {
   border-bottom: 1px solid #009879;
   border-left: 2px solid #009879;
   border-right: 2px solid #009879;
+  box-shadow: 4px 4px 4px 2px var(--clr-primary);
 }
 
 table tr:last-of-type {
@@ -657,12 +658,26 @@ input[type="text"]:focus {
 .button-edit {
   background-color: #4cafa8; /* Green */
 }
+.button-edit:hover{
+    background-color: chocolate;
+    box-shadow: 2px 2px 2px 2px var(--clr-info-dark);
+
+}
 
 .button-save {
   background-color: #008cba; /* Blue */
   display: none;
 }
+.button-save:hover{
+    background-color: chocolate;
+    box-shadow: 2px 2px 2px 2px var(--clr-info-dark);
+
+}
 
 .button-delete {
   background-color: #f43636; /* Red */
+}
+.button-delete:hover {
+    background: var(--clr-primary);
+    box-shadow: 2px 2px 2px 2px var(--clr-dark);
 }

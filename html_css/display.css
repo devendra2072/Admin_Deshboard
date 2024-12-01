@@ -31,6 +31,7 @@
   --clr-dark: #000000;
   --clr-dark-variant: #000000;
   --box-shadow: 0 2rem 3rem var(--clr-dark);
+  background: var(--clr-info-dark);
 }
 
 * {
@@ -377,6 +378,8 @@ main .recent-order h2 {
   }
   .demo11 table {
     width: auto;
+    padding: 20px;
+    border: 2px solid darkslategray;
   }
   .demo11 table tbody {
     width: 100%;
@@ -619,23 +622,32 @@ main .recent-order h2 {
   margin-top: 80px;
 }
 
-
-.container main .demo11 table tr {
+.demo11 table{
+    border: 2px solid  var(--clr-primary);
+    box-shadow: 2px 2px 2px 2px var(--clr-dark-variant);
+    background: linear-gradient(
+      to top right,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.3)
+    );
+    backdrop-filter: blur(5px);
+    padding: 30px;
+}
+.container main .demo11 table tbody tr {
   border: 2px solid darkslategray;
-
   gap: 12px;
   font-size: 20px;
-
-  background: linear-gradient(
+  /* background: linear-gradient(
     to top right,
     rgba(255, 255, 255, 0.5),
     rgba(255, 255, 255, 0.3)
-  );
+  ); */
   backdrop-filter: blur(5px);
 }
-.container main .demo11 table tr th {
-  color: var(--clr-dark);
+.container main .demo11 table tbody tr th {
+  /* color: var(--clr-dark); */
   align-items: center;
+  /* border: 2px solid transparent; */
 }
 .container main .demo11 table tr td {
   color: var(--clr-dark);

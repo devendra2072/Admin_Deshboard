@@ -24,8 +24,8 @@ async function dataShow() {
   let myTable = `
  <table border="5" align="center">
         <tr border-"5">
-          <th>Product Number</th>
-          <th>Product Name</th>
+          <th>Product<br> Number</th>
+          <th>Product<br> Name</th>
           <th>Price List</th>
           <th> Quantity</th>
         </tr>

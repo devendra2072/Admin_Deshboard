@@ -294,6 +294,7 @@ main .recent-order table {
   width: 100%;
   border-radius: var(--card-border-radius);
   padding: var(--card-padding);
+  padding-left: 0px;
   text-align: center;
   box-shadow: var(--box-shadow);
   transition: all.3s ease;
@@ -406,7 +407,7 @@ main table tbody tr:last-child td {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  
+
 }
 
 /* ----------------------tablet view------------------------- */
