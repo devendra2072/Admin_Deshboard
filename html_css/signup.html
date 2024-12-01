@@ -14,82 +14,19 @@
     <div class="container">
       <!----------------------- aside section start ----------------------------------->
       <aside>
-        <div class="top">
-          <div class="logo">
-            <h2>@<span class="danger">Jewellery</span></h2>
-          </div>
-          <div class="close" id="close_btnn">
-            <i class="fa-solid fa-xmark"></i>
-          </div>
-        </div>
         <!----------------------------------------------------- end top------------------------------- -->
 
-        <div class="sidebar">
-          <a href="/index.html" class="active">
-            <i class="fa-brands fa-dashcube"></i>
-            <h1>Dashboard</h1>
-          </a>
-
-          <a href="/html_css/insert.html" class="active">
-            <i class="fa-solid fa-user-plus"></i>
-            <h1>Insert Data</h1>
-          </a>
-
-          <a href="/html_css/display.html" class="active">
-            <i class="fa-solid fa-display"></i>
-            <h1>Display Data</h1>
-          </a>
-
-          <a href="/html_css/update.html" class="active">
-            <i class="fa-regular fa-pen-to-square"></i>
-            <h1>Update Data</h1>
-          </a>
-
-          <a href="#" class="active">
-            <i class="fa-solid fa-chart-line"></i>
-            <h1>Analytics</h1>
-          </a>
-
-          <a href="#" class="active">
-            <i class="fa-regular fa-envelope"></i>
-            <h1>Massages </h1>
-          </a>
-
-          <a href="#" class="active">
-            <i class="fa-solid fa-circle-exclamation"></i>
-            <h1>Reports </h1>
-          </a>
-
-          <a href="#" class="active">
-            <i class="fa-solid fa-gear"></i>
-            <h1>Settings</h1>
-          </a>
-          <a href="/html_css/login.html" class="active">
-            <i class="fa-solid fa-right-to-bracket"></i>
-            <h1>Log in</h1>
-          </a>
-          <a href="/html_css/signup.html" class="active">
-            <i class="fa-solid fa-user-plus"></i>
-            <h1>Sign up</h1>
-          </a>
-          <a href="/html_css/login.html" class="active">
-            <i class="fa-solid fa-arrow-right-from-bracket"></i>
-            <h1>Log Out</h1>
-          </a>
-        </div>
       </aside>
       <!------------------------------- aside section end ----------------------------------->
 
       <!------------------------------- main section start ----------------------------------->
       <main>
-        <h1 style="font-size: 30px;">Dashboard</h1>
-
         <div class="holder">
           <div class="box">
             <form autocomplete="off">
               <h2>Sign up</h2>
               <div class="inputBox">
-                <input type="text" required="required" id="name" >
+                <input type="text" required="required" id="name">
                 <span>Name</span>
                 <i></i>
               </div>
@@ -110,10 +47,10 @@
               </div>
               <div class="links">
                 <a href="#"></a>
-                <a href="#" style="text-decoration: underline;">Allready Have Your Account?</a>
-                
+                <a href="#" style="text-decoration: underline;">Allready Have
+                  Your Account?</a>
               </div>
-              <input type="submit" value="signup" id="signup" >
+              <input type="submit" value="signup" id="signup">
             </form>
           </div>
         </div>
@@ -124,38 +61,10 @@
       <!--------------------------------- right section start --------------------------------->
       <div class="right">
         <!-- -------------------start top--------------  -->
-        <div class="top">
 
-          <button id="menu_bar">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-
-          <!-- <div class="theme_toggler">
-            <i class="fa-regular fa-sun active" id="d"></i>
-            <i class="fa-solid fa-circle-half-stroke" id="d"></i>
-          </div>
-          <div class="proffile">
-            <div class="info">
-              <p><b>Abhishek Kurwe</b></p>
-              <p>Admin</p>
-              <small class="text-muted"></small>
-            </div>
-            <div class="profile-photo">
-              <img src="/imgj/dg.jpg" alt="img" height="50px" width="60px">
-            </div>
-            <div>
-
-            </div> -->
-          </div>
-
-        </div>
-        <!-- -------------------end |top--------------? -->
+        <!---------------------------------- right section end ------------------------------------>
       </div>
-      <!---------------------------------- right section end ------------------------------------>
-    </div>
-
-    <script src="/js_files/deshboard.js"></script>
-    <script>
+      <script>
       document.getElementById("signup").addEventListener("click",add);
 
 function add(e) {
@@ -179,18 +88,14 @@ function add(e) {
     localStorage.setItem("email", email);
     localStorage.setItem("password", password);
     localStorage.setItem("cnfpassword", cnfpsw);
-
-
     // redirect to login page 
 
     window.location.href = "login.html";
     // 
     alert("registration successful");
-
-
 }
 
     </script>
 
-  </body>
-</html>
+    </body>
+  </html>

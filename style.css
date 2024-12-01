@@ -202,6 +202,7 @@ main .insights > div {
 }
 
 main .insights > div:hover {
+  box-shadow: 2px 2px 2px 2px lightseagreen;
   transform: scale(1.02);
   /* box-shadow: none; */
 }
@@ -278,7 +279,15 @@ main .insights .progress .number {
 }
 main .recent-order {
   margin-top: 2rem;
+  box-shadow: 2px 2px 2px 2px var(--clr-dark);
+  border-radius: var(--card-border-radius);
+  transition: all 0.3s ease;
 }
+main .recent-order:hover {
+  box-shadow: 2px 2px 2px 2px lightseagreen;
+  transform: scale(1.02);
+}
+
 main .recent-order h2 {
   color: var(--clr-dark);
   font-size: 35px;
@@ -301,21 +310,25 @@ main .recent-order table {
   color: var(--clr-dark);
 }
 main .recent-order table:hover {
-  box-shadow: 1px solid var(--clr-warnig);
+  box-shadow: 1px solid lightslategray;
 }
 main table thead tr {
-  font-size: 15px;
+  font-size: 16px;
   color: black;
+}
+
+main table tbody tr:hover {
+  background: linear-gradient(-30deg, #33ccff, #81d5ff, #ffccff, #81d5ff);
 }
 main table tbody tr {
   height: 3.8rem;
   border-bottom: 3px solid black;
   color: black;
-  font-size: 17px;
+  font-size: 15px;
 }
 main table tbody td {
   height: 3.8rem;
-  border-bottom: 3px solid var(--clr-dark);
+  border-bottom: 3px solid lightskyblue;
 }
 main table tbody tr:last-child td {
   border: none;
@@ -407,7 +420,6 @@ main table tbody tr:last-child td {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-
 }
 
 /* ----------------------tablet view------------------------- */

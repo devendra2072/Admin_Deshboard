@@ -156,132 +156,6 @@ aside .sidebar a:hover i {
 }
 
 /* ----------------start main section ---------------------------- */
-main {
-  margin-top: 1.4rem;
-  width: auto;
-}
-main input {
-  background-color: transparent;
-  border: 0;
-  outline: 0;
-  color: var(--clr-dark);
-}
-
-main .date {
-  display: inline-block;
-  background: linear-gradient(
-    to top right,
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.3)
-  );
-  backdrop-filter: blur(5px);
-
-  border-radius: var(--border-radius-1);
-  margin-top: 1rem;
-  padding: 0.5rem 1.6rem;
-}
-
-main .insights {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.6rem;
-}
-
-main .insights > div {
-  background: linear-gradient(
-    to top right,
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.3)
-  );
-  backdrop-filter: blur(5px);
-  padding: var(--card-padding);
-  border-radius: var(--card-border-radius);
-  margin-top: 1rem;
-  box-shadow: var(--box-shadow);
-  transition: all 0.3s ease;
-}
-
-main .insights > div:hover {
-  transform: scale(1.02);
-}
-main .insights > div i {
-  background-color: coral;
-  padding: 0.5rem;
-  border-radius: 50%;
-  color: var(--clr-white);
-  font-size: 2rem;
-}
-main .insights > div.expensis i {
-  background-color: darkred;
-}
-main .insights > div.income i {
-  background: var(--clr-success);
-}
-main .insights > div .middle {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-main .insights > div .middle h1 {
-  font-size: 1.6rem;
-}
-main h1 {
-  color: var((--clr-dark));
-}
-main .insights h1 {
-  color: var(--clr-dark);
-}
-main.insights h2 {
-  color: var(--clr-dark);
-}
-main .insights .progress {
-  position: relative;
-  height: 68px;
-  width: 68px;
-  border-radius: 50px;
-}
-main .insights svg {
-  height: 150px;
-  width: 150px;
-  position: relative;
-  top: 0;
-}
-main .insights svg circle {
-  fill: none;
-  stroke: var(--clr-primary);
-  transform: rotate(270, 80, 80);
-  stroke-width: 5;
-}
-main .insights .sales svg circle {
-  stroke-dashoffset: 10;
-  stroke-dasharray: 150;
-}
-main .insights .expensis svg circle {
-  stroke-dashoffset: 0;
-  stroke-dasharray: 150;
-}
-main .insights .income svg circle {
-  stroke: var(--clr-success);
-}
-
-main .insights .progress .number {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-main .recent-order {
-  margin-top: 2rem;
-}
-main .recent-order h2 {
-  color: var(--clr-dark);
-  font-size: 35px;
-  font-weight: bold;
-}
 
 /* ------------------------------ start right section---------------- */
 .right {
@@ -350,8 +224,8 @@ main .recent-order h2 {
   display: flex;
   text-align: center;
 }
-.demo11 table tbody{
-    margin-left: 300px;
+.demo11 table tbody {
+  margin-left: 300px;
 }
 
 /* ---------------------------------responsive tablat view--------------------- */
@@ -367,10 +241,6 @@ main .recent-order h2 {
   aside .sidebar a:last-child {
     position: relative;
     margin-top: 1.8rem;
-  }
-  main .insights {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
   }
   .demo11 {
     width: 100%;
@@ -461,16 +331,6 @@ main .recent-order h2 {
     z-index: 2;
     box-shadow: 0 1rem 1rem var(--clr-white);
     margin: 0;
-  }
-  main .insights {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1.6rem;
-    padding: 40px;
-  }
-  main .recent-order {
-    margin: 0 auto;
-    padding: 30px;
   }
   .right .proffile {
     position: absolute;
@@ -572,16 +432,7 @@ main .recent-order h2 {
     box-shadow: 0 1rem 1rem var(--clr-white);
     margin: 0;
   }
-  main .insights {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1.6rem;
-    padding: 40px;
-  }
-  main .recent-order {
-    margin: 0 auto;
-    padding: 30px;
-  }
+
   .right .proffile {
     position: absolute;
     left: 70%;
@@ -622,32 +473,25 @@ main .recent-order h2 {
   margin-top: 80px;
 }
 
-.demo11 table{
-    border: 2px solid  var(--clr-primary);
-    box-shadow: 2px 2px 2px 2px var(--clr-dark-variant);
-    background: linear-gradient(
-      to top right,
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.3)
-    );
-    backdrop-filter: blur(5px);
-    padding: 30px;
+.demo11 table {
+  border: 2px solid var(--clr-primary);
+  box-shadow: 2px 2px 2px 2px var(--clr-dark-variant);
+  background: linear-gradient(
+    to top right,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(5px);
+  padding: 30px;
 }
 .container main .demo11 table tbody tr {
   border: 2px solid darkslategray;
   gap: 12px;
   font-size: 20px;
-  /* background: linear-gradient(
-    to top right,
-    rgba(255, 255, 255, 0.5),
-    rgba(255, 255, 255, 0.3)
-  ); */
   backdrop-filter: blur(5px);
 }
 .container main .demo11 table tbody tr th {
-  /* color: var(--clr-dark); */
   align-items: center;
-  /* border: 2px solid transparent; */
 }
 .container main .demo11 table tr td {
   color: var(--clr-dark);
