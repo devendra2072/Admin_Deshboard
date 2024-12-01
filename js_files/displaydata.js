@@ -19,7 +19,6 @@ themeToggler.addEventListener("click", () => {
 
 // ----------------------------display data js--------------------------
 
-// 18/11/2024
 async function dataShow() {
   let myTable = `
  <table border="5" align="center">

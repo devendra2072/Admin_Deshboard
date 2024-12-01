@@ -431,10 +431,8 @@ main {
 .container main .divtable table {
   width: 100%;
   border-collapse: collapse;
-
   backdrop-filter: blur(5px);
   margin-bottom: 20px;
-
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-top: 100px;
 }
@@ -464,15 +462,12 @@ table tr {
   border-right: 2px solid #009879;
   box-shadow: 4px 4px 4px 2px var(--clr-primary);
 }
-
 table tr:last-of-type {
   border-bottom: 2px solid #009879;
 }
-
 table tr:hover {
   background-color: #f1f1f1;
 }
-
 input[type="text"] {
   width: 90%;
   padding: 8px;
@@ -489,12 +484,10 @@ input[type="number"] {
   border-radius: 4px;
   transition: all 0.3s ease;
 }
-
 input[type="text"]:focus {
   border-color: #000000;
   outline: none;
 }
-
 .button {
   border: none;
   padding: 10px 15px;
@@ -507,7 +500,6 @@ input[type="text"]:focus {
   cursor: pointer;
   border-radius: 4px;
 }
-
 .button-edit {
   background-color: #4cafa8; /* Green */
 }
@@ -515,7 +507,6 @@ input[type="text"]:focus {
   background-color: chocolate;
   box-shadow: 2px 2px 2px 2px var(--clr-info-dark);
 }
-
 .button-save {
   background-color: #008cba; /* Blue */
   display: none;

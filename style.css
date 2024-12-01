@@ -175,7 +175,6 @@ main .date {
     rgba(255, 255, 255, 0.3)
   );
   backdrop-filter: blur(5px);
-
   border-radius: var(--border-radius-1);
   margin-top: 1rem;
   padding: 0.5rem 1.6rem;

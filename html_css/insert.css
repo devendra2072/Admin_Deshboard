@@ -429,6 +429,7 @@ main {
   padding: 25px;
   box-shadow: 4px 4px 4px 4px var(--clr-dark-variant);
   transition: all 0.3s ease;
+  border-radius: 20px;
 }
 .container main form .form-container:hover {
   box-shadow: 4px 4px 4px 4px lightseagreen;
@@ -467,11 +468,9 @@ main {
   color: #1d2125;
   box-shadow: 2px 2px 2px 2px var(--clr-dark);
 }
-
 .searchbox {
   position: relative;
 }
-
 .searchbox form i input {
   padding: 8px 50px 8px 2px;
   border: none;
@@ -481,7 +480,6 @@ main {
   margin-right: 210px;
   margin-bottom: 300px;
   font-size: 15px;
-
   background: linear-gradient(
     to top right,
     rgba(255, 255, 255, 0.5),

@@ -80,7 +80,7 @@ aside {
     grid-template-columns: 7rem auto 14rem;
   }
   .box {
-    margin-left: 200px;
+    margin-left: 50px;
   }
 }
 /* ----------------------mobile view------------------------- */
@@ -136,7 +136,7 @@ aside {
 
 /* ======================================login form============================== */
 .holder {
-  margin-top: 50px;
+  margin-top: 100px;
   position: relative;
   &:before,
   &:after {

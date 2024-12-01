@@ -247,7 +247,7 @@ aside .sidebar a:hover i {
     margin-top: 40px;
   }
   .demo11 table {
-    width: auto;
+    width: 100%;
     padding: 20px;
     border: 2px solid darkslategray;
   }
@@ -356,7 +356,8 @@ aside .sidebar a:hover i {
   }
   .demo11 table {
     width: auto;
-    margin-left: 30px;
+    margin-left: 10px;
+    margin-right: 15px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -459,11 +460,11 @@ aside .sidebar a:hover i {
     width: 80%;
     margin-left: 5px;
     gap: 10px;
-    align-items: center;
+    /* align-items: center; */
   }
   .demo11 table tbody tr td {
     width: 0%;
-    align-items: center;
+    /* align-items: center; */
   }
 }
 
@@ -472,30 +473,54 @@ aside .sidebar a:hover i {
 .container main .demo11 {
   margin-top: 80px;
 }
-
 .demo11 table {
-  border: 2px solid var(--clr-primary);
   box-shadow: 2px 2px 2px 2px var(--clr-dark-variant);
+  backdrop-filter: blur(5px);
+  padding: 30px;
+  width: 100%;
+  border-radius: 20px;
+  transition: all .3s ease;
+}
+.demo11 table:hover{
+  transform: scale(1.03);
+  box-shadow: 2px 2px 2px 2px lightseagreen;
+}
+.container main .demo11 table tbody tr {
+  gap: 12px;
+  font-size: 20px;
+  backdrop-filter: blur(5px);
+  height: 80px;
+ }
+table tbody tr:hover {
+  background-color: #f1f1f1;
+  backdrop-filter: blur(15px);
+}
+.container main .demo11 table tbody tr td {
+  display: table-cell;
+  color: var(--clr-dark);
+  margin-left: 70px;
+  height: 30px;
+  text-align: center;
+  border-bottom: 1px solid #009879;
+
+}
+.container main.demo11 table tbody tr td:hover {
   background: linear-gradient(
     to top right,
     rgba(255, 255, 255, 0.5),
     rgba(255, 255, 255, 0.3)
   );
   backdrop-filter: blur(5px);
-  padding: 30px;
 }
-.container main .demo11 table tbody tr {
-  border: 2px solid darkslategray;
-  gap: 12px;
-  font-size: 20px;
+table tbody tr th{
+  border-bottom: 1px solid #009879;
+ 
+}
+.container main.demo11 table tbody tr th:hover {
+  background: linear-gradient(
+    to top right,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.3)
+  );
   backdrop-filter: blur(5px);
-}
-.container main .demo11 table tbody tr th {
-  align-items: center;
-}
-.container main .demo11 table tr td {
-  color: var(--clr-dark);
-  align-items: center;
-  margin-left: 70px;
-  height: 30px;
 }
