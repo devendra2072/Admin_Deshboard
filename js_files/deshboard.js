@@ -50,4 +50,4 @@ if (date < 10) {
 
 var c_date = date + "-" + month + "-" + yr;
 
-document.getElementById('dl').value = c_date;
+document.getElementById('dl').value = c_date; 
