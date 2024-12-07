@@ -91,7 +91,26 @@ aside .top {
 }
 aside .top .logo {
   display: flex;
-  gap: 1rem;
+  gap: .1rem;
+}
+aside .top .logo h2{
+  /* font-size: 18px; */
+  text-transform: uppercase;
+  /* margin-left: 0.5em; */
+  color: #000;
+  text-shadow: 1px 1px 1px rgba(16, 16, 16, 0.1),
+    1px 2px 1px rgba(16, 16, 16, 0.2), 1px 3px 1px rgba(16, 16, 16, 0.1),
+    1px 4px 1px rgba(16, 16, 16, 0.2), 1px 5px 1px rgba(16, 16, 16, 0.1),
+    1px 6px 1px rgba(16, 16, 16, 0.2);
+}
+aside .top .logo img {
+  animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
 }
 aside .top div.close i {
   display: none;
@@ -147,7 +166,12 @@ aside .sidebar a:hover i {
   margin-left: 1rem;
   transition: 0.4s ease;
 }
-
+aside .sidebar a i:hover{
+  transform: scale(1.2) rotate(360deg);
+    color: #33cc33;
+    
+    background: transparent;
+}
 /* ----------------start main section ---------------------------- */
 main {
   margin-top: 1.4rem;
@@ -226,6 +250,10 @@ main {
     width: 94%;
     grid-template-columns: 7rem auto 14rem;
   }
+  aside .top .logo h2{
+    display: none;
+  }
+
   aside .sidebar h1 {
     display: none;
   }
@@ -254,7 +282,7 @@ main {
     backdrop-filter: blur(5px);
     display: none;
     left: -100px;
-    animation: menuAnimation 1s forwards;
+    animation: menuAnimation .3s forwards;
   }
   @keyframes menuAnimation {
     to {
@@ -262,9 +290,13 @@ main {
     }
   }
 
-  aside .logo h2 {
+  /* aside .logo h2 {
     display: inline;
+  } */
+  aside .top .logo h2{
+    display: block;
   }
+
   aside .sidebar h1 {
     display: inline;
   }
@@ -351,8 +383,11 @@ main {
     }
   }
 
-  aside .logo h2 {
+  /* aside .logo h2 {
     display: inline;
+  } */
+  aside .top .logo h2{
+    display: block;
   }
   aside .sidebar h1 {
     display: inline;
@@ -444,9 +479,8 @@ main {
 
 .container main form .form-container label {
   font-size: 19px;
-  color: var(--clr-primary);
+  color: var(--clr-dark);
 }
-
 .container main form .form-container input {
   width: 200px;
   height: 30px;
@@ -463,12 +497,12 @@ main {
   margin-top: 20px;
   font-size: 20px;
   text-align: center;
-  color: var(--clr-dark-variant);
+  /* color: var(--clr-dark-variant); */
   background-color: lightcoral;
   color: #1d2125;
   box-shadow: 2px 2px 2px 2px var(--clr-dark);
 }
-.searchbox {
+/* .searchbox {
   position: relative;
 }
 .searchbox form i input {
@@ -494,4 +528,4 @@ main {
 .searchbox #searc {
   position: absolute;
   top: 10px;
-}
+} */

@@ -28,7 +28,7 @@
   --clr-color-background: black;
   --clr-white: #202528;
   --clr-light: rgba(0, 0, 0, 0.4);
-  --clr-dark: #000000;
+  --clr-dark: #c71111;
   --clr-dark-variant: #000000;
   --box-shadow: 0 2rem 3rem var(--clr-dark);
   background: var(--clr-info-dark);
@@ -95,7 +95,26 @@ aside .top {
 }
 aside .top .logo {
   display: flex;
-  gap: 1rem;
+  /* gap: 1rem; */
+}
+aside .top .logo h2{
+  /* font-size: 18px; */
+  text-transform: uppercase;
+  /* margin-left: 0.5em; */
+  color: #000;
+  text-shadow: 1px 1px 1px rgba(16, 16, 16, 0.1),
+    1px 2px 1px rgba(16, 16, 16, 0.2), 1px 3px 1px rgba(16, 16, 16, 0.1),
+    1px 4px 1px rgba(16, 16, 16, 0.2), 1px 5px 1px rgba(16, 16, 16, 0.1),
+    1px 6px 1px rgba(16, 16, 16, 0.2);
+}
+aside .top .logo img {
+  animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
 }
 aside .top div.close i {
   display: none;
@@ -153,6 +172,11 @@ aside .sidebar a:hover {
 aside .sidebar a:hover i {
   margin-left: 1rem;
   transition: 0.4s ease;
+}
+aside .sidebar a i:hover{
+  transform: scale(1.2) rotate(360deg);
+    color: #33cc33;
+    background: transparent;
 }
 
 /* ----------------start main section ---------------------------- */
@@ -224,15 +248,15 @@ aside .sidebar a:hover i {
   display: flex;
   text-align: center;
 }
-.demo11 table tbody {
-  margin-left: 300px;
-}
 
 /* ---------------------------------responsive tablat view--------------------- */
 @media screen and (max-width: 1200px) {
   .container {
     width: 94%;
     grid-template-columns: 7rem auto 14rem;
+  }
+  aside .top .logo h2{
+    display: none;
   }
 
   aside .sidebar h1 {
@@ -287,7 +311,7 @@ aside .sidebar a:hover i {
     backdrop-filter: blur(5px);
     display: none;
     left: -100px;
-    animation: menuAnimation 1s forwards;
+    animation: menuAnimation .3s forwards;
   }
   @keyframes menuAnimation {
     to {
@@ -295,9 +319,13 @@ aside .sidebar a:hover i {
     }
   }
 
-  aside .logo h2 {
+  /* aside .logo h2 {
     display: inline;
+  } */
+  aside .top .logo h2{
+    display: block;
   }
+
   aside .sidebar h1 {
     display: inline;
   }
@@ -396,8 +424,11 @@ aside .sidebar a:hover i {
     }
   }
 
-  aside .logo h2 {
+  /* aside .logo h2 {
     display: inline;
+  } */
+  aside .top .logo h2{
+    display: block;
   }
   aside .sidebar h1 {
     display: inline;
@@ -484,6 +515,9 @@ aside .sidebar a:hover i {
 .demo11 table:hover{
   transform: scale(1.03);
   box-shadow: 2px 2px 2px 2px lightseagreen;
+}
+.demo11 table tbody {
+  margin-left: 300px;
 }
 .container main .demo11 table tbody tr {
   gap: 12px;
