@@ -358,14 +358,22 @@ main {
     left: 1rem;
     font-size: 30px;
   }
-  .container main form {
+  /* .container main form {
     margin-right: 110px;
     padding-left: -20px;
   }
   .container main form .form-container {
     margin-left: -30px;
-  }
+  } */
+  .form-container {
+    padding: 15px; /* Reduce padding on smaller screens */
 }
+
+.form-container input {
+    padding: 8px; /* Adjust input padding */
+}
+}   
+
 /* =============================mobile view=============================== */
 @media screen and (max-width: 425px) {
   .container {
@@ -450,12 +458,31 @@ main {
     left: 1rem;
     font-size: 30px;
   }
-  .container main form .form-container {
+  /* .container main form .form-container {
     margin-right: 110px;
     padding-left: -20px;
     padding-right: 50px;
     margin-left: -110px;
-  }
+  } */
+
+  .form-container {
+    padding: 10px;
+    margin-left: -150px; 
+}
+
+.form-container input {
+    padding: 6px; 
+}
+
+h2 {
+    font-size: 24px; 
+}
+
+label {
+    font-size: 14px; 
+}
+
+
 }
 
 /* ====================================== insert data form ============================== */
@@ -469,7 +496,7 @@ main {
   backdrop-filter: blur(5px);
   margin-top: 100px;
   margin-right: 600px;
-  /* align-items: center; */
+  
   padding: 25px;
   box-shadow: 4px 4px 4px 4px var(--clr-dark-variant);
   transition: all 0.3s ease;
