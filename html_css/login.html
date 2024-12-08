@@ -22,7 +22,7 @@
       <main>
         <div class="holder">
           <div class="box">
-            <form autocomplete="off">
+            <form >
               <h2>Sign in</h2>
               <div class="inputBox">
                 <input type="text" required="required" id="username">
@@ -67,12 +67,12 @@ function login(e) {
         return;
     }
 
-    let storedusername = localStorage.getItem("name");
+    let storedusername = localStorage.getItem("name0+");
     let storedpassword = localStorage.getItem("password");
 
     if(storedusername == username && storedpassword == password){
         alert(`Login Successfull,Welcome ${username}`);
-        window.location.href = "http://127.0.0.1:5501/index.html";
+        window.location.href = "http://127.0.0.1:5503/index.html";
     }
     else{
         alert("Invalid credentials");

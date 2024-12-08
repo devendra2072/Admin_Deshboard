@@ -70,7 +70,7 @@
 function add(e) {
     e.preventDefault();  // prevent default behaviour of form submit
 
-    let username = document.getElementById("name").value;
+    let username = document.getElementById("name0+").value;
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
     let cnfpsw = document.getElementById("cnfpassword").value;
@@ -84,7 +84,7 @@ function add(e) {
         return;
     }
     // Store data in local storage
-    localStorage.setItem("name", username);
+    localStorage.setItem("name0+", username);
     localStorage.setItem("email", email);
     localStorage.setItem("password", password);
     localStorage.setItem("cnfpassword", cnfpsw);

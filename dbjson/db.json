@@ -1,18 +1,11 @@
 {
   "employees": [
     {
-      "id": "1990",
       "prdtnum": "12",
       "name": "mob",
       "pricee": "45000",
-      "quantitty": "2"
-    },
-    {
-      "prdtnum": "12",
-      "name": "ring",
-      "pricee": "45000",
-      "quantitty": "2",
-      "id": "2f2c"
+      "quantitty": "25",
+      "id": "1990"
     },
     {
       "id": "ddd6",
@@ -20,6 +13,13 @@
       "name": "Ankhlet",
       "pricee": "7567",
       "quantitty": "12"
+    },
+    {
+      "prdtnum": "12",
+      "name": "ringgg",
+      "pricee": "786",
+      "quantitty": "788655",
+      "id": "4e05"
     }
   ]
 }
