@@ -50,7 +50,10 @@ body {
   height: 100vh;
   user-select: none;
   overflow-x: hidden;
-  background: linear-gradient(-30deg, #33ccff, #81d5ff, #ffccff, #81d5ff);
+  /* background: linear-gradient(-30deg, #33ccff, #81d5ff, #ffccff, #81d5ff); */
+  background: url("https://images.pexels.com/photos/1655166/pexels-photo-1655166.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+    no-repeat center center;
+    background-size: cover;
 }
 .container {
   display: grid;
@@ -165,8 +168,8 @@ aside {
   }
 }
 .box {
-  background: url("https://images.pexels.com/photos/1655166/pexels-photo-1655166.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
-    no-repeat center center;
+  /* background: url("https://images.pexels.com/photos/1655166/pexels-photo-1655166.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+    no-repeat center center; */
   background-size: cover;
   position: relative;
   width: 380px;
@@ -212,13 +215,18 @@ form {
   position: absolute;
   inset: 2px;
   background: transparent;
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(2px);
   padding: 50px 40px;
   padding-top: 0px;
   border-radius: 8px;
   z-index: 2;
   display: flex;
   flex-direction: column;
+}
+.box:hover{
+  box-shadow: 2px 2px 2px 2px lightseagreen;
+  transform: scale(1.02);
+  transition: all .8s ease ;
 }
 h2 {
   color: #000;
