@@ -261,6 +261,15 @@ main {
     position: relative;
     margin-top: 1.8rem;
   }
+  .right .proffile {
+    position: absolute;
+    left: 70%;
+  }
+  .right .top .theme_toggler {
+    width: 4.4rem;
+    position: absolute;
+    left: 50%;
+  }
 }
 
 /* ----------------------tablet view------------------------- */
