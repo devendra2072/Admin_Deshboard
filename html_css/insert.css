@@ -372,6 +372,7 @@ main {
 .form-container input {
     padding: 8px; /* Adjust input padding */
 }
+
 }   
 
 /* =============================mobile view=============================== */
@@ -468,6 +469,7 @@ main {
   .form-container {
     padding: 10px;
     margin-left: -150px; 
+    margin-right: -600px;
 }
 
 .form-container input {
@@ -480,6 +482,9 @@ h2 {
 
 label {
     font-size: 14px; 
+}
+input{
+  font-size: 14px;
 }
 
 
@@ -494,21 +499,24 @@ label {
     rgba(255, 255, 255, 0.3)
   );
   backdrop-filter: blur(5px);
-  margin-top: 100px;
-  margin-right: 600px;
-  
+  /* margin-top: 100px;
+  margin-right: 600px; */
+  margin: 20px auto;
+  margin-top: 50px;
+  max-width: 300px;
   padding: 25px;
   box-shadow: 4px 4px 4px 4px var(--clr-dark-variant);
   transition: all 0.3s ease;
   border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1)
 }
 .container main form .form-container:hover {
   box-shadow: 4px 4px 4px 4px lightseagreen;
   transform: scale(1.02);
 }
-.container main form {
+/* .container main form {
   margin-left: 150px;
-}
+} */
 .container main form .form-container h2 {
   font-size: 25px;
 }
@@ -516,6 +524,8 @@ label {
 .container main form .form-container label {
   font-size: 19px;
   color: var(--clr-dark);
+  margin-bottom: 5px;
+  display: block;
 }
 
 .container main form .form-container label:hover {
@@ -526,8 +536,15 @@ label {
   width: 200px;
   height: 30px;
   margin-left: 30px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
 }
 .container main form .form-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
   margin-top: 20px;
   font-size: 20px;
   text-align: center;
